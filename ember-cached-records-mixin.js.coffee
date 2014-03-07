@@ -1,9 +1,10 @@
-# A mixin for index pages that makes use of the data store's cache
-# to show results immediately if available, before updating from server.
+# A mixin for index routes that makes use of ember data's store
+# to return the route's model immediately if there are already records
+# available in cache, before making a call to update from the server.
 #
-# Route requirements:
+# Requirements for route:
 #
-# modelType (string)       - Name of model used for ember data calls.
+# modelType (string) - Name of model used for ember data calls.
 
 EmberCachedRecordsMixin = Ember.Mixin.create
 
